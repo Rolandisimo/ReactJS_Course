@@ -1,19 +1,25 @@
-var React = require('react'),
-    ReactRouter = require('react-router'),
-    Link = ReactRouter.Link,
-    transparentBg = require('../styles').transparentBg;
+import React, { PropTypes } from 'react';
+import ReactRouter, {Link} from 'react-router';
+import MainContainer from './MainContainer.jsx';
 
 function Home () {
-  return (
-    <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
-        <h1>Github Battle</h1>
-        <p className="lead">The fancy battle without weapons</p>
+    return (
 
-        <Link to="/playerOne">
-            <button className="btn btn-lg btn-success">Get Started</button>
-        </Link>
-    </div>
-);
+        <MainContainer>
+            <h1>
+                Github Battle
+            </h1>
+            <p className="lead">
+                The fancy battle without weapons
+            </p>
+
+            <Link to="/playerOne">
+                <button className="btn btn-lg btn-success">
+                    Get Started
+                </button>
+            </Link>
+        </MainContainer>
+    );
 }
 
 module.exports = Home;

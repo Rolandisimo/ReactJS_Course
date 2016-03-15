@@ -8,6 +8,7 @@ var Main = require('../components/Main');
 var Home = require("../components/Home");
 var PromptContainer = require('../containers/PromptContainer');
 var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer.jsx');
+var ResultsContainer = require('../containers/ResultsContainer.jsx');
 
 var routes = (
     <Router history={hashHistory}>
@@ -23,7 +24,10 @@ var routes = (
                 component={PromptContainer} />
             <Route
                 path='battle'
-                component={ConfirmBattleContainer }/>
+                component={ConfirmBattleContainer}/>
+            <Route
+                path='results'
+                component={ResultsContainer}/>
         </Route>
     </Router>
 );
