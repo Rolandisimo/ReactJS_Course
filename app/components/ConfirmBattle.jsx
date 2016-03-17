@@ -4,12 +4,13 @@ import ReactRouter, {Link} from 'react-router';
 import UserDetails from './UserDetails.jsx';
 import UserDetailsWrapper from './UserDetailsWrapper.jsx';
 import styles from '../styles';
+import Loading from './Loading.jsx';
 
 
 const ConfirmBattle = (props) => {
     return props.isLoading
     ?
-    <p>Loading...</p>
+    <Loading speed={150}/>
     :
     <MainContainer>
         <h1>Confirm Players</h1>

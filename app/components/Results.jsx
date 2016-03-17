@@ -4,11 +4,12 @@ import UserDetails from './UserDetails.jsx';
 import UserDetailsWrapper from './UserDetailsWrapper.jsx';
 import ReactRouter, {Link} from 'react-router';
 import MainContainer from './MainContainer.jsx';
+import Loading from './Loading.jsx';
 
 const Results = (props) => {
     if (props.isLoading === true) {
         return (
-            <h1>Loading...</h1>
+            <Loading />
         );
     }
 
