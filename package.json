@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "prod": "webpack -p"
   },
-  "author": "Tyler McGinnis <tylermcginnis33@gmail.com> (http://tylermcginnis.com)",
+  "author": "Roland Yegorov <rolandjegorov@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
